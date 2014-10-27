@@ -1,0 +1,32 @@
+<style type="text/css">
+  body {
+    background-color: black;
+  }
+
+  #logo {
+    margin-top: -250px;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+</style>
+
+<script>
+  var i = 0;
+  function change(e) {
+    i = (i + 1) % 5;
+    var filename = i + ".png";
+    document.getElementById("logo").src = filename;
+  }
+
+  window.onkeypress = change;
+  window.onkeydown = change;
+  window.onscroll = change;
+</script>
+
+
+
+<a href="ksparadio.pls">
+  <img id="logo" src="0.png" />
+</a>
